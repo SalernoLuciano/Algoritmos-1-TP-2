@@ -1,0 +1,75 @@
+#ifndef __PERFIL_H__
+#define __PERFIL_H__
+
+#define  MENOR_SIGNO  1
+#define  MAYOR_SIGNO  12
+#define  MIN_MALDADES  0
+#define  MAX_MALDADES 99
+#define  MIN_MASCOTAS  0
+#define  MAX_MASCOTAS  5
+#define  LIMITE_MALDADES  50
+#define  OFENSIVO  1
+#define  DEFENSIVO  0
+
+#define  MIN_MALDADES_INFERIOR_PUNTO1  0
+#define  MIN_MALDADES_INFERIOR_PUNTO2  10
+#define  MIN_MALDADES_INFERIOR_PUNTO3  20
+#define  MIN_MALDADES_INFERIOR_PUNTO4  30
+#define  MIN_MALDADES_INFERIOR_PUNTO5  40
+#define  MIN_MALDADES_SUPERIOR_PUNTO1  50
+#define  MIN_MALDADES_SUPERIOR_PUNTO2  60
+#define  MIN_MALDADES_SUPERIOR_PUNTO3  70
+#define  MIN_MALDADES_SUPERIOR_PUNTO4  80
+#define  MIN_MALDADES_SUPERIOR_PUNTO5  90
+
+#define  MAX_MALDADES_INFERIOR_PUNTO1  9
+#define  MAX_MALDADES_INFERIOR_PUNTO2  19
+#define  MAX_MALDADES_INFERIOR_PUNTO3  29
+#define  MAX_MALDADES_INFERIOR_PUNTO4  39
+#define  MAX_MALDADES_INFERIOR_PUNTO5  49
+#define  MAX_MALDADES_SUPERIOR_PUNTO1  59
+#define  MAX_MALDADES_SUPERIOR_PUNTO2  69
+#define  MAX_MALDADES_SUPERIOR_PUNTO3  79
+#define  MAX_MALDADES_SUPERIOR_PUNTO4  89
+#define  MAX_MALDADES_SUPERIOR_PUNTO5  99
+
+#define  ARIES  1
+#define  TAURO  2
+#define  GEMINIS  3
+#define  CANCER  4
+#define  LEO  5
+#define  VIRGO  6
+#define  LIBRA  7
+#define  ESCORPIO  8
+#define  SAGITARIO  9
+#define  CAPRICORNIO  10
+#define  ACUARIO  11
+#define  PISCIS  12
+
+#define   FUEGO  1
+#define   	TIERRA  2
+#define   	AIRE  3
+#define  	AGUA  0
+
+#define ACCION_MAYUSCULA 'A'
+#define ACCION_MINUSCULA 'a'
+#define COMEDIA_MAYUSCULA 'C'
+#define COMEDIA_MINUSCULA 'c'
+#define DRAMA_MAYUSCULA 'D'
+#define DRAMA_MINUSCULA 'd'
+#define TERROR_MAYUSCULA 'T'
+#define TERROR_MINUSCULA 't'
+
+#define ROHAN 'R'
+#define ISENGARD 'I'
+#define INTENSIDAD_MAX 10
+
+typedef struct jugador{
+	char tipo;
+	int intensidad;
+	int energia;
+}jugador_t;
+
+void perfil( char* tipo, int* intensidad );
+
+#endif
